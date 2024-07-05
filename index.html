@@ -12,47 +12,73 @@
             margin: 0;
             padding: 0;
             background-color: #f4f4f4;
+            color: #333;
         }
 
         header {
-            background-color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             color: white;
-            padding: 1em 0;
+            padding: 2em 0;
             text-align: center;
+        }
+
+        header h1 {
+            font-weight: 700;
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        header p {
+            font-weight: 300;
+            margin: 0.5em 0 0;
+            font-size: 1.25em;
         }
 
         main {
             padding: 2em;
-            max-width: 800px;
+            max-width: 1200px;
             margin: 0 auto;
         }
 
-        h1 {
-            font-weight: 300;
+        h2 {
+            font-weight: 500;
+            margin-bottom: 1em;
+            font-size: 1.75em;
+            text-align: center;
         }
 
         ul {
             list-style: none;
             padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
         }
 
         li {
             background: white;
-            margin: 1em 0;
-            padding: 1em;
-            border-radius: 5px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-            transition: transform 0.2s;
+            margin: 1em;
+            padding: 1.5em;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.2s, box-shadow 0.2s;
+            flex: 1 1 calc(33% - 2em);
+            max-width: calc(33% - 2em);
+            text-align: center;
         }
 
         li:hover {
-            transform: scale(1.02);
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
         }
 
         a {
             text-decoration: none;
             color: #333;
             font-weight: 500;
+            display: block;
+            font-size: 1.25em;
+            margin-top: 1em;
         }
 
         footer {
@@ -60,22 +86,20 @@
             color: white;
             text-align: center;
             padding: 1em 0;
-            position: absolute;
-            bottom: 0;
-            width: 100%;
+            margin-top: 2em;
         }
     </style>
 </head>
 <body>
     <header>
         <h1>Mahsa's Blog</h1>
-        <p>Welcome to my collection</p>
+        <p>Welcome to my collection of blog posts</p>
     </header>
     <main>
         <h2>Posts</h2>
         <ul>
-            <li><a href="post1/index.html">Post 1 </a></li>
-            <li><a href="post2/index.html">Post 2 </a></li>
+            <li><a href="post1/index.html">Post 1 - My First Post</a></li>
+            <li><a href="post2/index.html">Post 2 - Another Interesting Post</a></li>
         </ul>
     </main>
     <footer>
