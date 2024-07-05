@@ -1,0 +1,19 @@
+{
+  "name": "devmahsa-reveal",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "http-server",
+    "deploy": "gh-pages -d ."
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "gh-pages": "^3.2.3",
+    "http-server": "^0.12.3"
+  },
+  "dependencies": {
+    "reveal.js": "^4.3.1"
+  }
+}
