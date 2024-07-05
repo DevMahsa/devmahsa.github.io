@@ -4,14 +4,16 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "http-server",
+    "deploy": "gh-pages -d ."
   },
-  "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "http-server": "^14.1.1",
-    "live-server": "^1.2.2",
-    "reveal.js": "^5.1.0"
+    "gh-pages": "^3.2.3",
+    "http-server": "^0.12.3"
+  },
+  "dependencies": {
+    "reveal.js": "^4.3.1"
   }
 }
